@@ -13,7 +13,6 @@ export default class ChemRendererPlugin extends Plugin {
 
 
         if (isSMILES) {
-          console.log(text);
           context.addChild(new Renderer(codeblock, text));
         }
       }
