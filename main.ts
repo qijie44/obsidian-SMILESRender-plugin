@@ -1,5 +1,5 @@
 import { Plugin } from "obsidian";
-import { Renderer } from "./chemrenderer";
+import { Renderer } from "./smilesrenderer";
 
 export default class ChemRendererPlugin extends Plugin {
   async onload() {
