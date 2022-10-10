@@ -1,7 +1,7 @@
 {
 	"name": "obsidian-SMILESRender-plugin",
 	"version": "1.0.0",
-	"description": "This is a renderer for chemical structures. Just enclose the SMILES within $\SMILES{} in a codeblock to render the molecule",
+	"description": "This is a renderer for chemical structures. Just declare the code to be SMILES in a codeblock to render the molecule",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",

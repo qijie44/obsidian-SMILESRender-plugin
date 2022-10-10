@@ -8,14 +8,10 @@ export default class ChemRendererPlugin extends Plugin {
 
       for (let index = 0; index < codeblocks.length; index++) {
         const codeblock = codeblocks.item(index);
-        const text = codeblock.innerText.trim();
-        const isSMILES = text.substring(0,9) === "$\\SMILES{" && text[text.length - 1] === "}";
-
-
-        if (isSMILES) {
+        if (codeblock.className == "language-SMILES"){
+          const text = codeblock.innerText.trim();
           context.addChild(new Renderer(codeblock, text));
-        }
-      }
+      }}
     });
   }
 }
