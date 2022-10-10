@@ -17,13 +17,16 @@ export class Renderer extends MarkdownRenderChild {
       // StructureView.drawMolecule(molEl, Mol);
       // this.containerEl.replaceWith(molEl);
     
-      const ed = StructureEditor.createEditor("editor");
+      const MolDiv = this.containerEl.createEl("canvas");
+      MolDiv.setAttribute("id", "molecule_div");
+      MolDiv.setAttribute("view-only", "false");
+      const ed = StructureEditor.createEditor("molecule_div");
+      console.log(ed)
       // ed.setChangeListenerCallback((a, molecule) => {
       //   console.log(molecule.toSmiles());
       // });
-      console.log(this.text);
       ed.setSmiles(this.text);
-      this.containerEl.replaceWith(ed);
+      this.containerEl.replaceWith(MolDiv);
     }
   }
 
