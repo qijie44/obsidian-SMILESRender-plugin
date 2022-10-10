@@ -7,7 +7,7 @@ export class Renderer extends MarkdownRenderChild {
   constructor(containerEl: HTMLElement, text: string) {
     super(containerEl);
 
-    this.text = text.substring(9, text.length - 1);
+    this.text = text;
   }
 
   onload() {

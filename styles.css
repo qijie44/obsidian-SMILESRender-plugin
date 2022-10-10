@@ -10,3 +10,12 @@ If your plugin does not need CSS, delete this file.
 .molecule_canvas{
     background: white;
 }
+
+#molecule_div{
+    width:100%;
+    height:400px;
+    border:solid;
+    border-width:2px;
+    background: white;
+    overflow: visible;
+}
